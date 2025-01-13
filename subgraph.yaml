@@ -6,11 +6,12 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: filecoin
+    network: sei
     source:
-      address: '0xB4C47eD546Fc31E26470a186eC2C5F19eF09BA41'
+      address: '0x179D9a5592Bc77050796F7be28058c51cA575df4'
       abi: Factory
-      startBlock: 3195837
+      startBlock: 96611315
+
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -35,11 +36,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: filecoin
+    network: sei
     source:
-      address: '0x4cd986dD509fbB6A695aE971d5C56c8795f640ee'
+      address: '0xa7FDcBe645d6b2B98639EbacbC347e2B575f6F70'
       abi: NonfungiblePositionManager
-      startBlock: 3195861
+      startBlock: 96611412
 
     mapping:
       kind: ethereum/events
@@ -70,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: rootstock
+    network: sei
     source:
       abi: Pool
     mapping:
