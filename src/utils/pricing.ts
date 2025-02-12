@@ -4,19 +4,19 @@ import { Bundle, Pool, Token } from './../types/schema'
 import { BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 import { exponentToBigDecimal, safeDiv } from '../utils/index'
 
-const WETH_ADDRESS = '0xE30feDd158A2e3b13e9badaeABaFc5516e95e8C7'
+const WETH_ADDRESS = '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38'
 const USDC_WETH_03_POOL = '0x882f62fe8e9594470d1da0f70bc85096f6c60423'
 
 // token where amounts should contribute to tracked volume and liquidity
 // usually tokens that many tokens are paired with s
 export let WHITELIST_TOKENS: string[] = [
   WETH_ADDRESS, // WETH
-  '0x522b61755b5ff8176b2931da7bf1a5f9414eb710', // WMATIC
-  '0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1', // USDC
+  '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38', // WMATIC
+  '0x29219dd400f2Bf60E5a23d13Be72B486D4038894', // USDC
   '0xEB466342C4d449BC9f53A865D5Cb90586f405215' // DAI
 ]
 
-let STABLE_COINS: string[] = ['0x3894085Ef7Ff0f0aeDf52E2A2704928d1Ec074F1']
+let STABLE_COINS: string[] = ['0x29219dd400f2Bf60E5a23d13Be72B486D4038894']
 let MINIMUM_ETH_LOCKED = BigDecimal.fromString('5')
 
 let Q192 = BigInt.fromI32(2).pow(192 as u8)

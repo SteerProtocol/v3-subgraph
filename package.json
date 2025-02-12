@@ -11,8 +11,8 @@
     "deploy-dev": "graph deploy oku/uniswap-v3 --ipfs http://35.197.14.14:5000/ --node http://35.197.14.14:8020/ --debug",
     "deploy-staging": "graph deploy $THE_GRAPH_GITHUB_USER/$THE_GRAPH_SUBGRAPH_NAME /Uniswap --ipfs https://api.staging.thegraph.com/ipfs/ --node https://api.staging.thegraph.com/deploy/",
     "watch-local": "graph deploy ianlapham/uniswap-v3 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001",
-    "deploy-dragonswap": "goldsky subgraph deploy dragonswap-v2/1.1.2 --path ./build/",
-    "tag-dragonswap-subgraph": "goldsky subgraph tag create dragonswap-v2/1.1.2 --tag prod"
+    "deploy-uniswap": "goldsky subgraph deploy uniswap-v3/1.1.1 --path ./build/",
+    "tag-uniswap-subgraph": "goldsky subgraph tag create uniswap-v3/1.1.1 --tag prod"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.64.1",
