@@ -6,9 +6,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: unichain
+    network: tatarachain
     source:
-      address: '0x1f98400000000000000000000000000000000003'
+      address: '0x9B3336186a38E1b6c21955d112dbb0343Ee061eE'
       abi: Factory
       startBlock: 0
 
@@ -36,9 +36,9 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: unichain
+    network: tatarachain
     source:
-      address: '0x943e6e07a7e8e791dafc44083e54041d743c46e9'
+      address: '0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C'
       abi: NonfungiblePositionManager
       startBlock: 294152
 
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: unichain
+    network: tatarachain
     source:
       abi: Pool
     mapping:
