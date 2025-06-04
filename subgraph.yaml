@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: tataratestnet
+    network: telos
     source:
-      address: '0x9B3336186a38E1b6c21955d112dbb0343Ee061eE'
+      address: '0xcb2436774C3e191c85056d248EF4260ce5f27A9D'
       abi: Factory
-      startBlock: 0
+      startBlock: 386633562
 
     mapping:
       kind: ethereum/events
@@ -36,11 +36,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: tataratestnet
+    network: telos
     source:
-      address: '0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C'
+      address: '0x743E03cceB4af2efA3CC76838f6E8B50B63F184c'
       abi: NonfungiblePositionManager
-      startBlock: 294152
+      startBlock: 386633562
 
     mapping:
       kind: ethereum/events
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: tataratestnet
+    network: telos
     source:
       abi: Pool
     mapping:
