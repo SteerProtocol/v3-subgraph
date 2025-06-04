@@ -13,7 +13,7 @@
     "watch-local": "graph deploy ianlapham/uniswap-v3 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001",
     "deploy-uniswap": "goldsky subgraph deploy uniswap-v3-telos-oku/1.1.1 --path ./build/",
     "tag-uniswap-subgraph": "goldsky subgraph tag create uniswap-v3-telos-oku/1.1.1 --tag prod",
-    "deploy-uniswap-oxgraph": "graph deploy uniswap-v3-telos-oku/1.1.1 --verbose --node https://telos.api.ormilabs.com/deploy --ipfs https://telos.api.ormilabs.com/ipfs --deploy-key I16Y2UK3BWY8H8D97BIPMGWDB"
+    "deploy-uniswap-oxgraph": "graph deploy uniswap-v3-telos-oku --node https://telos.api.ormilabs.com/deploy --ipfs https://telos.api.ormilabs.com/ipfs --deploy-key I16Y2UK3BWY8H8D97BIPMGWDB"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.91.1",
