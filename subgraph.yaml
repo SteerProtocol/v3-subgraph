@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: saga-evm
+    network: nibiru
     source:
-      address: '0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa'
+      address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4'
       abi: Factory
-      startBlock: 18885
+      startBlock: 23658063
 
     mapping:
       kind: ethereum/events
@@ -36,11 +36,11 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: saga-evm
+    network: nibiru
     source:
-      address: '0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf'
+      address: '0xEFdE184f4b5d79f7c3b7Efc0388d829ff9af0050'
       abi: NonfungiblePositionManager
-      startBlock: 18902
+      startBlock: 23658348
 
     mapping:
       kind: ethereum/events
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: saga-evm
+    network: nibiru
     source:
       abi: Pool
     mapping:

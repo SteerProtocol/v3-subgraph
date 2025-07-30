@@ -5,7 +5,8 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
-    "build": "graph build",
+    "build-local": "graph build",
+    "build": "graph build -i https://unauthipfs.subquery.network/ipfs/api/v0",
     "create-local": "graph create uniswap-v3-telos-oku --node http://127.0.0.1:8020",
     "deploy-local": "graph deploy uniswap-v3-telos-oku --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
     "deploy-dev": "graph deploy oku/uniswap-v3 --ipfs http://35.197.14.14:5000/ --node http://35.197.14.14:8020/ --debug",
