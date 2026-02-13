@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: saga-evm
+    network: saga
     source:
       address: '0x454050C4c9190390981Ac4b8d5AFcd7aC65eEffa'
       abi: Factory
@@ -36,7 +36,7 @@ dataSources:
           handler: handlePoolCreated
   - kind: ethereum/contract
     name: NonfungiblePositionManager
-    network: saga-evm
+    network: saga
     source:
       address: '0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf'
       abi: NonfungiblePositionManager
@@ -71,7 +71,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: saga-evm
+    network: saga
     source:
       abi: Pool
     mapping:

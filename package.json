@@ -13,7 +13,8 @@
     "watch-local": "graph deploy ianlapham/uniswap-v3 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001",
     
     "deploy-uniswap": "goldsky subgraph deploy uniswap-v3-saga-evm-oku/1.1.5 --path ./build/",
-    "tag-uniswap-subgraph": "goldsky subgraph tag create uniswap-v3-saga-evm-oku/1.1.4 --tag prod"
+    "tag-uniswap-subgraph": "goldsky subgraph tag create uniswap-v3-saga-evm-oku/1.1.4 --tag prod",
+    "deploy-saga": "graph deploy uniswap-v3-saga-evm-oku --node https://api.subgraph.ormilabs.com/deploy --ipfs https://api.subgraph.ormilabs.com/ipfs --deploy-key 9L63MCEXDIHOMROTUNYOUBIRA"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.91.1",
